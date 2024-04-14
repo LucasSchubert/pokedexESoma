@@ -1,0 +1,94 @@
+#cabecalhoTag {
+    grid-area: cabecalhoTag;
+    border: solid #fce6a8 4px;
+    background-color: #d2e4e1
+}
+
+#doLadoTag {
+    background-color: #d2e4e1;
+
+    grid-area: doLadoTag;
+    border: solid #fce6a8 4px;
+}
+
+#principalTag {
+    background-color: #d2e4e1;
+
+    grid-area: principalTag;
+    border: solid #fce6a8 4px;
+}
+
+#rodapeTag {
+    background-color: #d2e4e1;
+
+    grid-area: rodapeTag;
+    border: solid #fce6a8 4px;
+}
+
+#quadradoUm,
+#quadradoDois,
+#quadradoTres,
+#quadradoQuatro {
+    gap: 5px;
+    background-color: #e3e8ed;
+
+
+}
+
+
+body {
+    display: grid;
+
+
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+
+    grid-template-areas:
+        'doLadoTag cabecalhoTag'
+        'principalTag principalTag'
+        'rodapeTag rodapeTag'
+    ;
+}
+
+main {
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+div {
+    background-color: #e3e8ed
+    ;
+    display: flex;
+    margin: 5px;
+    flex-grow: 1;
+
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+article {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    margin: 5px;
+
+    background-color: #ced8e0;
+}
+
+p {
+    text-align: center;
+}
+
+input {
+    align-items: center;
+    background-color: 788896;
+}
