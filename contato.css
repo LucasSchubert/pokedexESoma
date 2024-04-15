@@ -11,6 +11,7 @@
     align-items: center;
     grid-area: doLadoTag;
     border: solid #fce6a8 4px;
+    gap: 3px;
 }
 
 
@@ -34,8 +35,33 @@
     grid-area: doLadoTag2;
     border: solid #fce6a8 4px;
     flex-direction: column;
+    gap: 3px;
 }
 
+#nomeCaixa {
+    grid-area:nome ;
+
+}
+
+#sobrenomeCaixa {
+    grid-area:sobrenome ;
+
+}
+
+#e-mailCaixa {
+    grid-area:e-mail ;
+
+}
+
+#textArea {
+    grid-area:textArea ;
+
+}
+
+#buttonCaixa {
+    grid-area:buttonCaixa ;
+
+}
 
 
 
@@ -65,21 +91,33 @@ div {
     margin: 5px;
     flex-grow: 1;
     flex-direction: column;
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     max-width: 400px;
     justify-content: center;
     align-items: center;
     min-width: 400px;
+    
 
 }
 
 article {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+   
     margin: 5px;
-    background-color: #ced8e0;
+    background-color: #e3e8ed;
+
+    display: grid;
+
+    grid-template-columns:1fr 1fr ;
+    grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr;
+    gap: 5px;
+
+    grid-template-areas:
+    'nome sobrenome' 
+    'e-mail e-mail'
+    'textArea textArea'
+    'buttonCaixa buttonCaixa'
+    ;
 }
 
 p {
