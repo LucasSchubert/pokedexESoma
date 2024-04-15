@@ -5,12 +5,12 @@
 }
 
 #doLadoTag {
-background-color: #d2e4e1;
-display: flex;
-justify-content: center;
-align-items: center;
-grid-area: doLadoTag;
-border: solid #fce6a8 4px;
+    background-color: #d2e4e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: doLadoTag;
+    border: solid #fce6a8 4px;
 }
 
 
@@ -26,14 +26,14 @@ border: solid #fce6a8 4px;
     border: solid #fce6a8 4px;
 }
 
-#soma {
-    
-
-}
-
-#resultado {
-  
-
+#doLadoTag2 {
+    background-color: #d2e4e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: doLadoTag2;
+    border: solid #fce6a8 4px;
+    flex-direction: column;
 }
 
 
@@ -48,7 +48,7 @@ body {
     grid-template-rows: 0.1fr 1fr 0.1fr;
     grid-template-areas:
         'doLadoTag cabecalhoTag'
-        'principalTag principalTag'
+        'doLadoTag2 principalTag'
         'rodapeTag rodapeTag'
     ;
 }
@@ -78,10 +78,8 @@ div {
 article {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-  
+    margin: 5px;
+    background-color: #ced8e0;
 }
 
 p {
