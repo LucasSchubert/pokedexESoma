@@ -83,6 +83,7 @@ article {
     margin: 10px;
     display: flex;
     flex-direction: column;
+    gap: 3px;
   
 }
 
@@ -90,13 +91,13 @@ p {
     text-align: center;
 }
 
-a {
+a, button {
     display: inline-block;
     padding: 3px 3px;
     background-color: #788896;
     color: white;
     text-decoration: none;
-    border-radius: 3px;
+    border-radius: 4px;
     min-width: 70px;
     text-align: center;
 }
