@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Principal</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="soma.js"></script>
+    <script src="requisicoes.js"></script>
+    <script src="index.js"></script>
 
 </head>
 
@@ -25,26 +27,26 @@
     <main id="principalTag">
         <div>
             <article id="soma">
-                <input type="number">
-                <input type="number">
-                <button type="button">Somar</button>
+                <input type="number" id="inputNumeroUm">
+                <input type="number" id="inputNumeroDois">
+                <button onclick="processarSoma()" >Somar</button>
             </article>
 
             <article id="resultado">
                 <p>Resultado:</p>
-                <p>???</p>
+                <p id="resultadoSoma">???</p>
 
             </article>
         </div>
 
         <div>
             <article id="soma">
-                <input type="text">
-                <button type="button">Buscar</button>
+                <input type="text" id="idPokemon">
+                <button onclick="processarPokemon()">Buscar</button>
             </article>
 
             <article id="resultado">
-                <p>Resultado</p>
+                <p>Pokemon</p>
                 <p>???</p>
 
             </article>
